@@ -1,0 +1,33 @@
+html {
+    background-color: rgba(21, 129, 48, 0.164)
+}
+
+h1, h2, p {
+    font-family: 'Helvetica';
+}
+
+header {
+    border-bottom: 1px solid #999; 
+    margin-bottom: 2rem;
+    display: flex;
+    }
+    
+
+header h1 a { 
+    color: rgb(16, 114, 40);
+    margin-left: 40px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.post-entry h2 a { 
+    color: rgb(13, 87, 62);
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.post-entry p { 
+    color: rgb(13, 87, 62);
+    margin-left: 50px;
+    font-style: italic;
+}
