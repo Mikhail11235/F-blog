@@ -1,37 +1,60 @@
-html {
-    background-color: rgba(21, 129, 48, 0.164)
-}
-
-h1, h2, p {
+body {
+    background-color: rgba(21, 129, 48, 0.164);
     font-family: 'Helvetica';
 }
 
 header {
-    border-bottom: 1px solid #999; 
+    border-bottom: 1.5px solid rgb(39, 131, 43); 
     margin-bottom: 2rem;
     display: flex;
-    }
-    
-
-header h1 a { 
-    color: rgb(16, 114, 40);
-    margin-left: 40px;
-    font-size: 40px;
-    text-decoration: none;
 }
 
-.post-entry h2 a { 
-    color: rgb(13, 87, 62)
+header h1 a { 
+    color: rgb(39, 131, 43);
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.nav-left { 
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.nav-right { 
+    display: flex;
+    padding-top: 3em;
+}
+.nav-right a {
+    text-decoration: none;
+    color: rgb(39, 131, 43);
+}
+
+.post-entry { 
+    margin-bottom: 2rem;
+    color: rgb(13, 87, 62);
 }
 
 .post-entry h2 { 
+    margin: 0.5rem 0;
+    padding-left: 20px;
+}
+
+.post-entry h2 a, 
+.post-entry h2 a:visited {
+    text-decoration: none; 
     color: rgb(13, 87, 62);
-    font-size: 30px;
-    margin-left: 40px;
 }
 
 .post-entry p { 
+    margin: 0;
+    padding-left: 30px;
+}
+
+.post-entry h2 a:hover { 
+    color: rgb(65, 202, 95);
+}
+
+.post-form {
     color: rgb(13, 87, 62);
-    margin-left: 50px;
-    font-style: italic;
+    padding-left: 20px;
 }
