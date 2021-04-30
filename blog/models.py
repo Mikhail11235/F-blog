@@ -7,7 +7,13 @@ class Post(models.Model):
         'auth.User',
         on_delete=models.CASCADE,
         )
-    body = models.TextField() 
+    body = models.TextField()
+
+
+    def bodyTop100(self):
+        if len(self.body) >= 100:
+            return self.body[:100] + '...'
+        return self.body
     
     
     def __str__(self):

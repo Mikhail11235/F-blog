@@ -21,6 +21,10 @@ header h1 a {
 }
 
 .post-entry h2 a { 
+    color: rgb(13, 87, 62)
+}
+
+.post-entry h2 { 
     color: rgb(13, 87, 62);
     font-size: 30px;
     margin-left: 40px;
