@@ -10,7 +10,7 @@ class Post(models.Model):
     body = models.TextField()
 
 
-    def bodyTop100(self):
+    def bodyFirst100(self):
         if len(self.body) >= 100:
             return self.body[:100] + '...'
         return self.body
