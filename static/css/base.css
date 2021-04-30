@@ -58,3 +58,25 @@ header h1 a {
     color: rgb(13, 87, 62);
     padding-left: 20px;
 }
+
+.post-detail-container p a {
+    padding-left: 20px;
+    color: rgb(13, 87, 62);
+    text-decoration: none; 
+}
+
+.edit-post {
+    color: rgb(13, 87, 62);
+    padding-left: 20px;
+}
+
+.post-detail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.post-delete {
+    color: rgb(13, 87, 62);
+    padding-left: 20px;
+}

@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class='post-entry'>
-        <h2>{{post.title}}</h2>
-        <p>{{post.body}}</p>
+        <h2>{{object.title}}</h2>
+        <p>{{object.body}}</p>
+    </div>
+    <div class='post-detail-container'>
+    <p><a href="{% url 'post_edit' post.pk %}">⚙️ Edit Frog post</a></p>
+    <p><a href="{% url 'post_delete' post.pk %}">☠️ Delete Frog post</a></p>
     </div>
 {% endblock content%}
