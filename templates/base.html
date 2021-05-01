@@ -5,17 +5,29 @@
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     </head>
     <body>
-        <div class="container"></div>
+        <div class="container">
             <header>
                 <div class="nav-left">
                     <h1><a href="/"> 🐸 Frog Blog 🐸 </a></h1>
                 </div>
                 <div class="nav-right">
+                    {% if user.is_authenticated %}
+                        <p>Hi {{ user.username }}!</p> 
+                        <a href="{% url 'logout' %}">logout </a>
+                    {% else %}
+                        <p>You are not logged in</p> 
+                        <div class="login-signup-container">
+                            <a href="{% url 'login' %}">login</a>
+                            <a href="{% url 'signup' %}">sign up</a>
+                        </div>    
+                    {% endif %}
+                    <br>
                     <a href="{% url 'post_new' %}"> + New Frog post </a> 
                 </div>
             </header>
-            {% block content %}
-            {% endblock content %}
+        </div>    
+        {% block content %}
+        {% endblock content %}
         </div>
     </body>
 </html>
